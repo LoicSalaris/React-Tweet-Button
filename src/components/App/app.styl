@@ -1,0 +1,75 @@
+@import '~/styles/vars'
+
+.app
+	margin: 3em 0 10em
+	text-align: center
+
+	&-article
+		font-family: "Titillium Web"
+		font-size: 1.1em
+		font-weight: 300
+		margin: 0 auto 8em
+		max-width: 700px
+		line-height: 1.6
+		text-align: left
+
+		strong
+		em
+			color: #666
+			font-weight: 600
+			font-style: normal
+
+		a
+			color: #e46385
+
+		h1
+		h2
+		h3
+			font-family: "Palanquin Dark"
+			margin: 2em 0 .1em
+			color: #1d1d1d
+
+		h1
+			text-align: center
+			color: #ccc
+			font-size: 4em
+
+		header
+		footer
+		p
+			color: #777
+			margin: 0 0 1em
+
+		header::after
+		footer::before
+			content: ""
+			display: block
+			margin: 4em auto
+			width: 10em
+			background: #ccc
+			height: 1px
+
+		blockquote
+			position: relative
+			margin-top: 2em
+			&::before
+				content: "‘‘"
+				font-family: "Palanquin Dark"
+				position: absolute
+				top: -.25em
+				left: -.5em
+				color: #eee
+				font-size: 4em
+				line-height: 1
+
+		figure
+			margin: 3em
+			img
+				max-width: 100%
+				height: auto
+			figcaption
+				color: #aaa
+				text-align: center
+				font-weight: 200
+				font-size: .9em
+				font-style: italic
